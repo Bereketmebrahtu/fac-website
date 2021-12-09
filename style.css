@@ -1,8 +1,8 @@
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 body {
-    margin: 0;
+    /* margin: 0; */
 }
 
 .title {
@@ -13,6 +13,9 @@ justify-content: center;
 }
 
 .logo {
+    display: flex;
+    position: absolute;
+    justify-content: center;
     padding: 20px;
     font-size: xx-large;
     
@@ -37,3 +40,21 @@ justify-content: center;
     margin: 0px;
     
 }
+
+
+.footer-section {
+    display: flex;
+    position: relative;
+   justify-content: center;
+}
+
+
+.footer-links {
+    display: flex;
+    position: absolute;
+    font-size: 20px;
+    justify-content: space-around;
+  
+}
+
+
