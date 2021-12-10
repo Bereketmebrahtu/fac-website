@@ -12,13 +12,18 @@ body {
 }
 
 .nav-section {
-    background-color:wheat;
+    background-color:rgb(8, 146, 89);
+
     padding-bottom: 50px;
     margin: 0;
     left: 0;
-   
-    
 }
+.nav-section:hover,
+.nav-section:focus {
+    background-color:rgb(8, 146, 89);
+    color: rgb(5, 22, 5);
+}
+   
 
 .title {
 display:flex;
@@ -73,9 +78,10 @@ font-size: xx-large;
     padding: 1.5rem 0 0;
     background-size: cover;
     background-color: rgb(143, 92, 179);
-    
-      
+          
 }
+
+
 .card-content {
     padding: 1.5em;
     
@@ -149,8 +155,19 @@ font-size: xx-large;
   padding-right: 1.5px;
   padding-bottom: 10px;
   
- 
+
 }
+
+.button-container >.prev-Btn .next-Btn {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: paleturquoise;
+    background: rgb(29, 28, 28);
+    padding: 0.5em 1.25em;
+    border-radius: 5px;
+}
+
 .prev-Btn {
     left: 1rem;
     transform: translateX(-100%);
@@ -168,7 +185,20 @@ font-size: xx-large;
     border-radius: 4px;
 }
 
+.prev-Btn:hover, 
+.prev-Btn:focus {
 
+    background-color:rgb(8, 146, 89);
+    color: rgb(5, 22, 5);
+}
+
+.next-Btn:hover,
+.next-Btn:focus {
+
+    background-color:rgb(8, 146, 89);
+    color: rgb(5, 22, 5);
+
+}
 .footer-section {
     display: flex;
     position: relative;
