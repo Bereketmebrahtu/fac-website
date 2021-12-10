@@ -12,6 +12,10 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
+p {
+    color: white;
+}
+
 .nav-section {
     padding-bottom: 50px;
     margin: 0;
@@ -106,6 +110,8 @@ transition: transform 500ms ease;
 }
 
 .card-content-1 {
+    display: flex;
+    position: relative;
     padding: 1.5em;
     float: left;
     float: center;
@@ -122,40 +128,6 @@ transition: transform 500ms ease;
          
 }
 
-.card-content-2 {
-    padding: 1.5em;
-    float: right;
-    float: center;
-    width: fit-content;
-    height: min-content;
-    padding: 1.5em;
-    background: linear-gradient(
-        hsla(0, 0%, 0%, 0),
-        rgba(224, 97, 97, 0.4) 20%,
-        hsl(0 0% 0% / 1)
-    );
-   transform: translateY(-30%);
-   transition: transform 500ms ease;
-         
-}
-
-.card-content-3 {
-    padding: 1.5em;
-    float: right;
-    float: center;
-    width: fit-content;
-    height: min-content;
-    padding: 1.5em;
-    background: linear-gradient(
-        hsla(0, 0%, 0%, 0),
-        rgba(224, 97, 97, 0.4) 20%,
-        hsl(0 0% 0% / 1)
-    );
-   transform: translateY(-30%);
-   transition: transform 500ms ease;
-
-}
-    
 
 .about-me-content {
     float:left;
@@ -211,8 +183,14 @@ transition: transform 500ms ease;
     );
    transform: translateY(50%);
    transition: transform 500ms ease;
+  
+}
 
-    
+
+.projects {
+    display: flex;
+    position: relative;
+    background-color:  rgb(143, 92, 179);
 }
 
 .carousel {
@@ -345,15 +323,35 @@ icon:focus {
     
     background-color:rgb(8, 146, 89);
     color: rgb(5, 22, 5);
-    
-    
+      
 }
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    background-color: indianred;
+    background: linear-gradient(
+        hsla(0, 0%, 0%, 0),
+        rgba(224, 97, 97, 0.4) 20%,
+        hsl(0 0% 0% / 0.99)
+        
+    );
+        transform: translateY(-20);
+        transition: transform 500ms ease;
     
-@media screen and (max-width:600px) {
+    
+  
+}
+
+@media screen and (max-width:800px) {
     .card {
         width: auto;
-        overflow: auto;
-        
+        overflow:auto;
+           
+    }
+
+    .projects {
+       transform: translateY(50%) ;
     }
 
     
