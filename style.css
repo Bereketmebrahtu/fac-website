@@ -218,7 +218,7 @@ transition: transform 500ms ease;
   padding-right: 1.5px;
   padding-bottom: 10px;
   margin-top: 0;
-  transform: translateY(100%);
+  transform: translateY(-100%);
   
 
 }
@@ -231,6 +231,7 @@ transition: transform 500ms ease;
     background: rgb(29, 28, 28);
     padding: 5px;
     border-radius: 5px;
+    z-index: -2;
 
 
 }
@@ -241,15 +242,19 @@ transition: transform 500ms ease;
     transform: translateY(100%);
     border: 2px solid black;
     border-radius: 4px;
+    background-color: indianred;
+   
     
 }
 
 .next-Btn {
     right: 1rem;
-    transform: translateX(100%);
-    transform: translateY(-100);
+    transform: translateX(-100%);
+    transform: translateY(100);
     border: 2px solid black;
     border-radius: 4px;
+    background-color: indianred;
+    
     
 } 
 
