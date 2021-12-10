@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     height: auto;
+    
 
 }
 body {
@@ -22,22 +23,23 @@ body {
 
 .nav-content > ul > li:hover,
 .nav-content > ul > li:focus {
-    background-color:white;
-    color:tomato;
+   background-color: indianred;
+   color: indigo;
 }
+
    
 
 .title {
 display:flex;
 position: relative;
 justify-content: center;
-padding-bottom: 50px;
 margin: 0;
 font-size: xx-large;
+color: balck;
 background: linear-gradient(
-    hsla(0, 0%, 0%, 0),
-    rgba(224, 97, 97, 0.3) 20%,
-    hsl(0 0% 0% / 1)
+    hsla(0, 0%, 0%, 0.0),
+    rgba(224, 97, 97, 0.3) 30%,
+    hsl(0 0% 0% / 0.9)
 );
 transform: translateY(50%);
 transition: transform 500ms ease;
@@ -64,12 +66,12 @@ transition: transform 500ms ease;
 }
 
 .nav-content > ul > li {
-    color: white;
+    color: black;
 }
 .about-me-title {
     font-size: 18px;
     padding: 5px;
-    color: white;
+    color: wheat;
     
 }
 
@@ -97,26 +99,69 @@ transition: transform 500ms ease;
           
 }
 
+.card-content {
+    display: flex;
+    justify-content: center;
+    
+}
+
 .card-content-1 {
-    float: right;
+    padding: 1.5em;
+    float: left;
+    float: center;
     width: fit-content;
     height: min-content;
     padding: 1.5em;
-
     background: linear-gradient(
         hsla(0, 0%, 0%, 0),
         rgba(224, 97, 97, 0.4) 20%,
         hsl(0 0% 0% / 1)
     );
-   transform: translateY(50%);
+   transform: translateY(-30%);
    transition: transform 500ms ease;
          
 }
+
+.card-content-2 {
+    padding: 1.5em;
+    float: right;
+    float: center;
+    width: fit-content;
+    height: min-content;
+    padding: 1.5em;
+    background: linear-gradient(
+        hsla(0, 0%, 0%, 0),
+        rgba(224, 97, 97, 0.4) 20%,
+        hsl(0 0% 0% / 1)
+    );
+   transform: translateY(-30%);
+   transition: transform 500ms ease;
+         
+}
+
+.card-content-3 {
+    padding: 1.5em;
+    float: right;
+    float: center;
+    width: fit-content;
+    height: min-content;
+    padding: 1.5em;
+    background: linear-gradient(
+        hsla(0, 0%, 0%, 0),
+        rgba(224, 97, 97, 0.4) 20%,
+        hsl(0 0% 0% / 1)
+    );
+   transform: translateY(-30%);
+   transition: transform 500ms ease;
+
+}
+    
 
 .about-me-content {
     float:left;
     width: fit-content;
     height: auto;
+    color: wheat;
     border-radius: 10px;
     padding: 1.5em;
     background-color:indianred;
@@ -127,15 +172,13 @@ transition: transform 500ms ease;
     );
    transform: translateY(50%);
    transition: transform 500ms ease;
-
-    
-   
+  
 }
 
 .why-fac-title {
     padding: 3px;
     font-size: 18px;
-    color: white;
+    color: wheat;
 }
 
 .why-fac-content {
@@ -143,6 +186,7 @@ transition: transform 500ms ease;
     width: fit-content;
     height: min-content;
     border-radius: 10px;
+    color: wheat;
     padding: 1.5em;
     background-color: indianred;
     background: linear-gradient(
@@ -213,10 +257,10 @@ transition: transform 500ms ease;
 
 .button-container {
   position: absolute;
-  right: 52%;
   transform: translateX(100%);
   padding-right: 1.5px;
   padding-bottom: 10px;
+  left: 50%;
   margin-top: 0;
   transform: translateY(-100%);
   
@@ -226,7 +270,6 @@ transition: transform 500ms ease;
 .button-container >.prev-Btn .next-Btn {
     cursor: pointer;
     display: flex;
-    text-decoration: none;
     color: paleturquoise;
     background: rgb(29, 28, 28);
     padding: 5px;
@@ -242,7 +285,9 @@ transition: transform 500ms ease;
     transform: translateY(100%);
     border: 2px solid black;
     border-radius: 4px;
+    right: 50%;
     background-color: indianred;
+
    
     
 }
@@ -253,6 +298,7 @@ transition: transform 500ms ease;
     transform: translateY(100);
     border: 2px solid black;
     border-radius: 4px;
+    left: 50%;
     background-color: indianred;
     
     
@@ -275,24 +321,17 @@ transition: transform 500ms ease;
 .footer-section {
    display: flex;
    position: relative;
-   justify-content: flex-start;
    background: indianred;
    margin-bottom: 0;
 
 }
 
-.footer-container {
-    display: flex;
-    position:absolute;
-    background-color: indianred;
-    
-}
 
 .footer-links {
     display: flex;
     position: absolute;
     font-size: 25px;
-    justify-content: flex-start;
+    justify-content: flex-end;
     
        
 }
@@ -310,3 +349,12 @@ icon:focus {
     
 }
     
+@media screen and (max-width:600px) {
+    .card {
+        width: auto;
+        overflow: auto;
+        
+    }
+
+    
+}
