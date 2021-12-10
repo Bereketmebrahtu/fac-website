@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     height: auto;
-    
+
 }
 body {
     display: grid;
@@ -12,24 +12,18 @@ body {
 }
 
 .nav-section {
-    background-color:tomato;
     padding-bottom: 50px;
     margin: 0;
     left: 0;
-    background-color:indianred;
-    background: linear-gradient(
-        hsla(0, 0%, 0%, 0),
-        rgba(39, 233, 55, 0) 30%,
-        hsl(0 0% 0% / 1)
-    );
-   transform: translateY(50%);
-   transition: transform 500ms ease;
+    border-radius: 10px;
+    
 
 }
-.nav-section:hover,
-.nav-section:focus {
-    /* background-color:rgb(44, 51, 48);
-    color: rgb(5, 22, 5); */
+
+.nav-content > ul > li:hover,
+.nav-content > ul > li:focus {
+    background-color:white;
+    color:tomato;
 }
    
 
@@ -38,19 +32,18 @@ display:flex;
 position: relative;
 justify-content: center;
 padding-bottom: 50px;
+margin: 0;
 font-size: xx-large;
-color: white;
+background: linear-gradient(
+    hsla(0, 0%, 0%, 0),
+    rgba(224, 97, 97, 0.3) 20%,
+    hsl(0 0% 0% / 1)
+);
+transform: translateY(50%);
+transition: transform 500ms ease;
+     
 
-}
 
-.logo {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    padding: 5px;
-    top: 0;
-    font-size: xx-large;
-    
 }
 
 .header-section {
@@ -61,22 +54,18 @@ color: white;
     
 }
 
-.title-logo {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-
-}
-
 .nav-content > ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
     top: 10px;
-    margin: 0;  
+    margin: 0;
+    
 }
 
-
+.nav-content > ul > li {
+    color: white;
+}
 .about-me-title {
     font-size: 18px;
     padding: 5px;
@@ -103,7 +92,7 @@ color: white;
     overflow: hidden;
     height: 100vh;
     margin-right: 2px;
-    border: 2px solid grey;
+    
 
           
 }
@@ -112,13 +101,11 @@ color: white;
     float: right;
     width: fit-content;
     height: min-content;
-    border: 2px solid grey;
-    border-radius: 10px;
     padding: 1.5em;
-    background-color:indianred;
+
     background: linear-gradient(
         hsla(0, 0%, 0%, 0),
-        hsl(20 0% 0% /0.4) 30%,
+        rgba(224, 97, 97, 0.4) 20%,
         hsl(0 0% 0% / 1)
     );
    transform: translateY(50%);
@@ -130,14 +117,13 @@ color: white;
     float:left;
     width: fit-content;
     height: auto;
-    /* border: 2px solid grey; */
-    /* border-radius: 10px; */
+    border-radius: 10px;
     padding: 1.5em;
     background-color:indianred;
     background: linear-gradient(
         hsla(0, 0%, 0%, 0),
-        rgba(211, 50, 82, 0.4) 30%,
-        hsl(0 0% 0% / 0.6)
+        rgba(224, 97, 97, 0.4) 20%,
+        hsl(0 0% 0% / 0.99)
     );
    transform: translateY(50%);
    transition: transform 500ms ease;
@@ -161,8 +147,8 @@ color: white;
     background-color: indianred;
     background: linear-gradient(
         hsla(0, 0%, 0%, 0),
-        rgba(228, 101, 101, 0.4) 30%,
-        hsl(0 0% 0% / 1)
+        rgba(224, 97, 97, 0.4) 20%,
+        hsl(0 0% 0% / 0.99)
     );
    transform: translateY(50%);
    transition: transform 500ms ease;
@@ -173,10 +159,11 @@ color: white;
     margin-top: 0;
     overflow: hidden;
     background-color:indianred;
+    border-radius: 10px;
     background: linear-gradient(
         hsla(0, 0%, 0%, 0),
         rgba(224, 97, 97, 0.4) 20%,
-        hsl(0 0% 0% / 1)
+        hsl(0 0% 0% / 0.99)
     );
    transform: translateY(50%);
    transition: transform 500ms ease;
@@ -196,7 +183,14 @@ color: white;
     justify-content: center;
     object-fit: cover;
     padding-bottom: 0;
-   
+    background: linear-gradient(
+        hsla(0, 0%, 0%, 0),
+        rgba(0, 0, 0, 0.4) 20%,
+        hsl(0 0% 0% / 0.99)
+    );
+        transform: translateY(-20);
+        transition: transform 500ms ease;
+     
 }
 
 .slide {
