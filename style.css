@@ -4,12 +4,15 @@
     
 }
 body {
+    display: grid;
     width:100%;
     margin: 0;
+    line-height: 1.2;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .nav-section {
-    background: #9AB8D2;
+    background-color:wheat;
     padding-bottom: 50px;
     margin: 0;
     left: 0;
@@ -63,20 +66,33 @@ font-size: xx-large;
 .about-me-title {
     font-size: 18px;
     padding: 5px;
+    
+}
+
+.card {
+    padding: 1.5rem 0 0;
+    background-size: cover;
+    background-color: rgb(143, 92, 179);
+    background: hsl(0, 0%, 0% / 0.5);
+      
+}
+.card-content {
+   
 }
 
 .about-me-content {
-
-    padding: 5px;
     float:left;
     width: fit-content;
     height: auto;
     border: 2px solid grey;
     border-radius: 10px;
+    padding: 1.5em;
+    background: hsl(0, 0%, 0% / 0.5);
+    background-color:indianred;
 }
 
 .why-fac-title {
-    padding: 5px;
+    padding: 3px;
     font-size: 18px;
 }
 
@@ -86,11 +102,14 @@ font-size: xx-large;
     height: min-content;
     border: 2px solid grey;
     border-radius: 10px;
+    padding: 1.5em;
+    background-color: indianred;
+    background: hsl(0, 0%, 0% / 0.5)
 }
 
-.carousel-container {
+/* .carousel-container {
     width: 100vw;
-}
+} */
 
 .carousel {
     
@@ -150,17 +169,12 @@ font-size: xx-large;
     border-radius: 4px;
 }
 
-.carousel-footer-container {
-    display: flex;
-    justify-content: right;
-    
-   
-}
 
 .footer-section {
     display: flex;
     position: relative;
    justify-content: flex-start;
+   background: indianred;
    margin-bottom: 0;
 
 }
@@ -168,7 +182,7 @@ font-size: xx-large;
 .footer-container {
     display: flex;
     position:absolute;
-    background-color: #9AB8D2;
+    background-color: indianred;
     
 }
 
