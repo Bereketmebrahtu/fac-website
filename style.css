@@ -12,7 +12,7 @@ body {
 }
 
 .nav-section {
-    background-color:rgb(8, 146, 89);
+    background-color:tomato;
 
     padding-bottom: 50px;
     margin: 0;
@@ -81,8 +81,10 @@ font-size: xx-large;
     overflow: hidden;
     height: 100vh;
     margin-right: 2px;
+    transition: transform 500ms ease;
           
 }
+
 
 .card-1 {
     padding: 2rem;
@@ -137,10 +139,19 @@ font-size: xx-large;
     float:left;
     width: fit-content;
     height: auto;
-    border: 2px solid grey;
-    border-radius: 10px;
+    /* border: 2px solid grey; */
+    /* border-radius: 10px; */
     padding: 1.5em;
     background-color:indianred;
+    background: linear-gradient(
+        hsla(0, 0%, 0%, 0),
+        hsl(20 0% 0% /0.4) 30%,
+        hsl(0 0% 0% / 1)
+    );
+   transform: translateY(50%);
+   transition: transform 500ms ease;
+
+    
    
 }
 
@@ -153,11 +164,17 @@ font-size: xx-large;
     float: right;
     width: fit-content;
     height: min-content;
-    border: 2px solid grey;
     border-radius: 10px;
     padding: 1.5em;
     background-color: indianred;
-    background: hsl(0, 0%, 0% / 0.5)
+    background: linear-gradient(
+        hsla(0, 0%, 0%, 0),
+        hsl(20 0% 0% /0.4) 30%,
+        hsl(0 0% 0% / 1)
+    );
+   transform: translateY(50%);
+   transition: transform 500ms ease;
+
 }
 
 .carousel-container {
