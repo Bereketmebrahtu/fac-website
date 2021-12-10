@@ -73,10 +73,13 @@ font-size: xx-large;
     padding: 1.5rem 0 0;
     background-size: cover;
     background-color: rgb(143, 92, 179);
-    background: hsl(0, 0%, 0% / 0.5);
+    
       
 }
 .card-content {
+    padding: 1.5em;
+    
+    
    
 }
 
@@ -87,7 +90,6 @@ font-size: xx-large;
     border: 2px solid grey;
     border-radius: 10px;
     padding: 1.5em;
-    background: hsl(0, 0%, 0% / 0.5);
     background-color:indianred;
 }
 
@@ -107,9 +109,6 @@ font-size: xx-large;
     background: hsl(0, 0%, 0% / 0.5)
 }
 
-/* .carousel-container {
-    width: 100vw;
-} */
 
 .carousel {
     
