@@ -15,4 +15,8 @@ https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw : Run by kevin Powell c
 
 ....as well as WS3school and mozilla development and may more resources used in helping build my website.
 
+I included image carousel as part of the prerequisite and used basic javascript in which nodesList were targeted and iterated through using forEach method and affected to shift left or right forllowing Eventlistener. DOM manupilation was essential in tiying all of the different aspects of the website together. 
+
+
+
 
